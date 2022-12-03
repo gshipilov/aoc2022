@@ -43,23 +43,25 @@ fn part_2(input: &[String]) -> u32 {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use indoc::indoc;
 
-    const TEST_INPUT: &str = r#"1000
-2000
-3000
-
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000
-
-"#;
+    const TEST_INPUT: &str = indoc! {r#"
+    1000
+    2000
+    3000
+    
+    4000
+    
+    5000
+    6000
+    
+    7000
+    8000
+    9000
+    
+    10000
+    
+    "#};
 
     #[test]
     fn test_part_1() {

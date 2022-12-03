@@ -118,10 +118,13 @@ fn parse_goal(input: &str) -> IResult<&str, Goal> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use indoc::indoc;
 
-    const TEST_INPUT: &str = r#"A Y
-B X
-C Z"#;
+    const TEST_INPUT: &str = indoc! {r#"
+    A Y
+    B X
+    C Z
+    "#};
 
     #[test]
     fn test_part_1() {
