@@ -3,7 +3,7 @@ use std::io::Read;
 use std::path::PathBuf;
 
 pub fn read_input_lines(name: &str) -> Vec<String> {
-    read_input(name).lines().map(String::from).collect()
+    str_to_lines(&read_input(name))
 }
 
 pub fn read_input(name: &str) -> String {
@@ -17,4 +17,8 @@ pub fn read_input(name: &str) -> String {
     let mut out = String::new();
     file.read_to_string(&mut out).unwrap();
     out
+}
+
+pub fn str_to_lines(input: &str) -> Vec<String> {
+    input.lines().map(String::from).collect()
 }
