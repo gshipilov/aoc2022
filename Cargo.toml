@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 indoc = "1.0"
+itertools = "0.10"
 nom = "7.1"
